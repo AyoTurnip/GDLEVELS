@@ -77,8 +77,67 @@ export default function handler(req, res) {
     "Lethal Lava Land"
   ];
 
+  const creators = [
+    "Demishio",
+    "awesomeme360",
+    "Bamvie",
+    "neigefeu",
+    "SirGuillester",
+    "Dorami",
+    "Jax",
+    "Riot",
+    "Zobros",
+    "KrmaL",
+    "Voxicat",
+    "DORABAE",
+    "Serponge",
+    "Bli",
+    "IcEDCave",
+    "OniLinkGD",
+    "ViPriN",
+    "Mindcap",
+    "BoBoBoBoBoBoBo",
+    "saRy",
+    "CairoX",
+    "APTeamOfficial",
+    "cherryteam",
+    "TheShadowRealm",
+    "Renn241",
+    "Presta",
+    "BIANOX",
+    "OddMod",
+    "ItzKiba",
+    "PockeWindfish",
+    "Darwin",
+    "Danzmen",
+    "lTemp",
+    "Rob Buck",
+    "Robtop",
+    "Pennutoh",
+    "Stormfly",
+    "Spu7nix",
+    "para",
+    "Akunakunn",
+    "nikroplayz",
+    "Knobbelboy",
+    "MadisonYuko",
+    "JonathanGD",
+    "nick24",
+    "Manix648",
+    "TeamN2",
+    "thejshadow",
+    "vortrox",
+    "TheRealSailent",
+    "Neomarbilan",
+    "Zafkiel7",
+    "f4lixsram",
+    "tricipital",
+    "Lemons"
+  ];
+
   const randomLevel = levels[Math.floor(Math.random() * levels.length)];
+  const randomCreator = creators[Math.floor(Math.random() * creators.length)];
 
   res.setHeader("Content-Type", "text/plain");
-  res.status(200).send(randomLevel);
+  res.status(200).send(`${randomLevel} by ${randomCreator}`);
 }
