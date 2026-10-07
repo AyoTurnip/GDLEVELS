@@ -74,7 +74,8 @@ export default function handler(req, res) {
     "Player vs Creator",
     "MikuMikuMikuMiku",
     "Forbidden",
-    "Lethal Lava Land"
+    "Lethal Lava Land",
+    "Saul Goodman"
   ];
 
   const creators = [
@@ -132,7 +133,9 @@ export default function handler(req, res) {
     "Zafkiel7",
     "f4lixsram",
     "tricipital",
-    "Lemons"
+    "Lemons",
+    "Split72",
+    "Mulpan"
   ];
 
   const randomLevel = levels[Math.floor(Math.random() * levels.length)];
